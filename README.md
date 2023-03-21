@@ -17,6 +17,7 @@ The budget analyzer app typically provides features such as:
 ## Technologies
 * [Android Studio](https://developer.android.com/studio)
 * [Java](https://www.java.com/en/)
+* [Firebase](https://firebase.google.com/)
 
 ## Installation
 * Download apk file from github
