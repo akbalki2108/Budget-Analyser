@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/drawer_layout"
+    android:fitsSystemWindows="true"
+    tools:openDrawer="start"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <androidx.appcompat.widget.Toolbar
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/design_default_color_primary"
+            android:id="@+id/toolbar"
+            android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
+            app:popupTheme = "@style/ThemeOverlay.AppCompat.Light"
+            android:elevation="4dp"/>
+        <FrameLayout
+            android:id="@+id/fragment_container"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="match_parent"
+                android:layout_height="67dp"
+                android:textAlignment="center"
+                android:text="@string/mainactivity"
+                android:textSize="30sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.072" />
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <Button
+                    android:id="@+id/logout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginEnd="1dp"
+                    android:text="@string/logout"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="227dp"
+                android:layout_marginTop="7dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView">
+
+                <TextView
+                    android:id="@+id/textView9"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginTop="10dp"
+                    android:text="@string/user_profile"
+                    android:textAlignment="center"
+                    android:textSize="20sp" />
+
+                <ImageView
+                    android:id="@+id/profileImage"
+                    android:layout_width="110dp"
+                    android:layout_height="119dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginEnd="242dp"
+                    android:layout_marginBottom="52dp"
+                    android:contentDescription="@string/todo"
+                    app:layout_constraintStart_toStartOf="parent"
+                    tools:layout_editor_absoluteY="146dp"
+                    tools:srcCompat="@drawable/person" />
+
+                <TextView
+                    android:id="@+id/person_email"
+                    android:layout_width="221dp"
+                    android:layout_height="22dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginTop="76dp"
+                    android:layout_marginEnd="9dp"
+                    android:text="@string/email_address"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    tools:layout_editor_absoluteY="146dp" />
+
+                <TextView
+                    android:id="@+id/person_name"
+                    android:layout_width="221dp"
+                    android:layout_height="24dp"
+                    android:layout_alignTop="@+id/person_email"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginTop="32dp"
+                    android:layout_marginEnd="9dp"
+                    android:layout_marginBottom="96dp"
+                    android:text="@string/person_name"
+                    app:layout_constraintEnd_toEndOf="parent" />
+
+                <TextView
+                    android:id="@+id/person_phoneNo"
+                    android:layout_width="219dp"
+                    android:layout_height="20dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginEnd="12dp"
+                    android:layout_marginBottom="70dp"
+                    android:text="@string/phone_no"
+                    app:layout_constraintEnd_toEndOf="parent" />
+
+                <TextView
+                    android:id="@+id/verify_email"
+                    android:layout_width="131dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@+id/person_phoneNo"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginEnd="98dp"
+                    android:layout_marginBottom="14dp"
+                    android:text="@string/verify_your_email"
+                    android:visibility="gone"
+                    app:layout_constraintEnd_toEndOf="parent" />
+
+                <Button
+                    android:id="@+id/verify_email_now"
+                    android:layout_width="97dp"
+                    android:layout_height="20dp"
+                    android:layout_alignStart="@+id/person_phoneNo"
+                    android:layout_alignBottom="@+id/person_phoneNo"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginStart="105dp"
+                    android:layout_marginTop="63dp"
+                    android:layout_marginEnd="26dp"
+                    android:layout_marginBottom="-30dp"
+                    android:background="?attr/selectableItemBackgroundBorderless"
+                    android:text="@string/verify_now"
+                    android:textColor="#0000FF"
+                    android:textSize="11sp"
+                    android:visibility="gone"
+                    tools:layout_editor_absoluteX="16dp"
+                    tools:layout_editor_absoluteY="357dp" />
+
+                <Button
+                    android:id="@+id/reset_password"
+                    android:layout_width="117dp"
+                    android:layout_height="24dp"
+                    android:layout_alignBottom="@+id/person_phoneNo"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginEnd="12dp"
+                    android:layout_marginBottom="-50dp"
+                    android:background="?attr/selectableItemBackgroundBorderless"
+                    android:text="@string/reset_pass"
+                    android:textColor="#0000FF"
+                    android:textSize="11sp" />
+
+                <Button
+                    android:id="@+id/changeProfile"
+                    android:layout_width="117dp"
+                    android:layout_height="24dp"
+                    android:layout_alignBottom="@+id/person_phoneNo"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginEnd="238dp"
+                    android:layout_marginBottom="-49dp"
+                    android:background="?attr/selectableItemBackgroundBorderless"
+                    android:text="@string/change_profile"
+                    android:textColor="#0000FF"
+                    android:textSize="11sp" />
+
+            </RelativeLayout>
+
+        </FrameLayout>
+    </LinearLayout>
+
+    <com.google.android.material.navigation.NavigationView
+
+        android:id="@+id/nav_view"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        app:headerLayout="@layout/nav_header"
+        app:menu="@menu/drawer_menu"/>
+
+
+
+
+</androidx.drawerlayout.widget.DrawerLayout>

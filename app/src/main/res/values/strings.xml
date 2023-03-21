@@ -1,0 +1,100 @@
+<resources>
+    <string name="app_name">Budget Analyser</string>
+    <string name="register">Register</string>
+
+
+    <string name="heading1">LOGIN PORTAL</string>
+    <string name="submit">submit</string>
+    <string name="cancel">Cancel</string>
+    <string name="attempt">Attempt Left : </string>
+    <string name="another_activity">Another Activity</string>
+
+    <string name="sign_up">Sign Up</string>
+    <string name="sign_in">Continue</string>
+    <string name="login_before">Joinned us before?</string>
+    <string name="email">example@gmail.com</string>
+    <string name="name">Full Name</string>
+    <string name="mobile">Mobile</string>
+
+
+    <string name="sign_condition">"By signing you're agree to our terms and conditions and Policy"</string>
+
+    <string name="login">Login!</string>
+    <string name="pass">Password</string>
+    <string name="forgot">Forgot Password?</string>
+    <string name="or">------------OR------------</string>
+    <string name="google">Login with Google</string>
+    <string name="signup_before">New to Logistics?</string>
+    <string name="Register">Register</string>
+
+    <string name="otp">OTP Verification!</string>
+    <string name="otp_dsc">Enter the 6-digit code that has been sent to your E-mail to complete your account registration</string>
+    <string name="otp_resend">hasn\'t get the confirmation code yet?</string>
+    <string name="resend">Resend</string>
+    <string name="todo">TODO</string>
+
+    <string name="reset_pass">Reset Password!!</string>
+    <string name="old_pass">Old Password</string>
+    <string name="new_pass">New Password</string>
+
+    <string name="forgot_dsc">Don\'t worry! it happens. Please enter the address associated with your account</string>
+    <string name="welcome_you">Welcome User!!</string>
+    <string name="main_activity">Main activity</string>
+    <string name="mainactivity">MainActivity</string>
+
+    <string name="logout">Logout</string>
+
+    <string name="add">add</string>
+    <string name="textview">TextView</string>
+    <string name="retrieve_data">Retrieve Data</string>
+    <string name="email_address">Email Address</string>
+    <string name="person_name">Person Name</string>
+    <string name="phone_no">Phone NO.</string>
+    <string name="verify_your_email">Verify Your Email : </string>
+    <string name="verify_now">verify now !!</string>
+    <string name="user_profile">User Profile</string>
+    <string name="change_profile">Change Profile</string>
+
+    <!-- to toggle the open close button of the navigation drawer -->
+    <string name="nav_open">Open</string>
+    <string name="nav_close">Close</string>
+    <string name="settings">Settings</string>
+    <string name="my_account">My Account</string>
+    <string name="home">Home</string>
+    <string name="communicate">communicate</string>
+    <string name="share">share</string>
+    <string name="send">Send</string>
+
+    <string-array name="items">
+        <item>Select item</item>
+        <item>Transport</item>
+        <item>Food</item>
+        <item>House</item>
+        <item>Entertainment</item>
+        <item>Education</item>
+        <item>Charity</item>
+        <item>Apparel</item>
+        <item>Health</item>
+        <item>Personal</item>
+        <item>Other</item>
+    </string-array>
+
+    <string name="budget">Budget</string>
+    <string name="today">Today</string>
+    <string name="weeks">Weeks</string>
+    <string name="months">Months</string>
+    <string name="savings">savings</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_blank">BlankActivity</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+
+
+</resources>
