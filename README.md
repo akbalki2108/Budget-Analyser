@@ -1,4 +1,4 @@
-# Budget-Analyser
+# Budget-Analyzer
 
 ## Description
 
